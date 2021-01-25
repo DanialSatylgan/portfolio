@@ -1,0 +1,46 @@
+// compress: true
+
+body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    // line-height: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+
+    padding: 0px 10px;
+    margin: 0px auto;
+    transition: .1s;
+
+    &.blur {
+        filter: blur(10px);
+    }
+}
+
+
+@import "var";
+@import "mixins";
+
+// site ----------------------------------
+
+@import "header";
+@import "intro";
+@import "category";
+@import "about";
+@import "blog";
+@import "footer";
+@import "popup/hire";
+@import "popup/project";
+@import "media";
+@import "burger";

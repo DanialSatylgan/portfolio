@@ -1,0 +1,59 @@
+// main: style.less
+.about {
+    width: 100%;
+    max-width: 1100px;
+    // height: 610px;
+
+    margin: 0 auto;
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+        max-width: 465px;
+        height: 550px;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+    }
+
+    &__sub-title {
+        .title(45px);
+    }
+
+    &__title {
+        .title(80px);
+        opacity: .2;
+        margin-top: -40px;  
+        margin-left: 25px; 
+    }
+
+    &__text {
+        font-family: @ff;
+        color: #6A696B;
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+
+    &__btns {
+        width: 100%;
+        max-width: 390px;
+
+        margin-top: 50px;
+
+        display: flex;
+        justify-content: space-between;
+
+
+        a {
+            .btn-hire(35px);
+        }
+    }
+
+}

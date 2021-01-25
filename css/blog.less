@@ -1,0 +1,82 @@
+// main: style.less
+.blog {
+    width: 100%;
+    margin-top: 105px;
+
+    & > h3 {
+        .title(45px);
+        text-align: center;
+    }
+
+    & > p {
+        font-family: @ff;
+        font-weight: 300;
+        font-size: 18px;
+        color: #8C8C8D;
+        text-align: center;
+    }
+
+    &__container {
+        width: 100%;
+
+        margin-top: 50px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 33.3333%;
+
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+
+        p {
+            width: 100%;
+            max-width: 35px;
+            height: 35px;
+
+            display: inline-block;
+            padding: 20px 20px;
+
+            background-color: @black;
+
+            font-family: @ff;
+            font-weight: @r;
+            font-size: 16px;
+            color: #ffffff;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            margin-top: 0px;
+        }
+    }
+
+    &__title {
+        .title(18px);
+        margin-top: 20px;
+    }
+
+    &__sub-title {
+        .sub-title(12px);
+    }
+
+    &__text {
+        font-family: @ff;
+        font-weight: 300;
+        font-size: 12px;
+        color: @btnc;
+        margin-top: 5px;
+    }
+
+    & a {
+        .btn(20px);
+        margin-top: 30px;
+    }
+}

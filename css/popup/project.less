@@ -1,0 +1,118 @@
+// main: ../style.less
+
+.project {
+    width: 100%;
+    max-width: 1200px;
+    height: 775px;
+
+    display: flex;
+
+    margin: 0 auto;
+
+    transition: .2s;
+
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+
+
+    & > img {
+        max-width: 790px;
+        height: 100%;
+    }
+
+    & > img.close {
+        max-width: 60px;
+        max-height: 60px;
+        position: absolute;
+        margin-left: 1110px;
+
+        cursor: pointer;
+    } 
+
+    &__content {
+        width: 100%;
+        max-width: 410px;
+
+        padding: 55px 0px 0px 30px;
+
+        background-color: #fff;
+
+        h3 {
+            .title(32px);
+        }
+    }
+
+    &__sub-title {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        max-width: 170px;
+        p{ 
+            .sub-title(18px);
+            &.line:after {
+                content: "";
+                width: 2px;
+                height: 15px;
+
+                position: absolute;
+
+                margin-top: 2px;
+                margin-left: 15px;
+
+                background-color: @btnc;
+            }
+        }
+    
+    } /* sub-title */
+
+    &__client {
+        .title(16px);
+
+        span {
+            .sub-title(14px);
+        }
+    }
+
+    &__text {
+        font-family: @ff;
+        font-weight: 300;
+        font-size: 12px;
+        color: @btnc;
+
+        max-width: 285px;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 100%;
+        max-width: 325px;
+        height: 12px;
+
+        margin: 0 auto;
+
+        margin-top: 160px;
+
+        a {
+            font-family: @ff;
+            font-weight: 400;
+            font-size: 14px;
+            color: @black;
+        }
+    }
+
+    &.active {
+        top: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+} /* project */
